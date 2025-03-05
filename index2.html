@@ -116,7 +116,7 @@ let newsAccordian = document.getElementById('newsaccordian');//Mentioned The id 
 function load(){document.getElementById("cat").innerHTML=ctgy.toUpperCase()+" TOP NEWS";
 //GET REQUEST
 const xhr = new XMLHttpRequest();//HTTPS REQUEST MADE
-xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${ctry}&category=${ctgy}&apiKey=${apikey}`, true);//GET REQUEST AND URL ABHI CORRECT KARNA HAI JUST TEST FOR BBC-NEWS
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${ctry}&category=${ctgy}&apiKey=${apikey}`, true);//GET REQUEST AND URL ABHI CORRECT KARNA HAI JUST TEST FOR BBC-NEWS
 //FUNCTION THAT WORKS FOR LOADING
 
 xhr.onload = function () {
